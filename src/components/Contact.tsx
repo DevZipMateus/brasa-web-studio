@@ -81,7 +81,7 @@ const Contact = () => {
             <ScrollReveal direction="right" delay={200}>
               <div className="rounded-xl sm:rounded-2xl overflow-hidden border border-border h-[280px] sm:h-[350px] md:h-[400px] lg:h-full shadow-lg hover:shadow-xl transition-shadow duration-500">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1974.0!2d-47.4373889!3d-6.5601667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!1zNsKwMzMnMzYuNiJTIDQ3wrAyNicxNC42Ilc!5e0!3m2!1spt-BR!2sbr"
+                  src="https://maps.google.com/maps?q=-6.5601667,-47.4373889&z=17&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: "280px" }}
