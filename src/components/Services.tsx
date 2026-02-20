@@ -47,12 +47,11 @@ const Services = () => {
       {/* Service cards with images */}
       <div className="grid md:grid-cols-3">
         {services.map((service) => (
-          <div key={service.title} className="relative group overflow-hidden h-[420px]">
-            <img
-              src={service.image}
-              alt={service.alt}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
+          <div
+            key={service.title}
+            className="relative group overflow-hidden h-[420px] bg-fixed bg-cover bg-center"
+            style={{ backgroundImage: `url(${service.image})` }}
+          >
             <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/30 group-hover:from-dark group-hover:via-dark/80 transition-all duration-300" />
             <div className="relative h-full flex flex-col justify-end p-8">
               <div className="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-4">

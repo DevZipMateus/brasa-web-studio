@@ -9,7 +9,6 @@ const Contact = () => {
       <ParallaxImage
         src={bgContact}
         alt="Vista aérea da cidade de Estreito no Maranhão"
-        speed={0.5}
         className="h-64 md:h-72"
         overlayClassName="bg-gradient-to-b from-dark/60 to-dark/80"
       >
