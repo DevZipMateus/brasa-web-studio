@@ -1,17 +1,19 @@
 import { Target, Eye, Heart } from "lucide-react";
 import bgAbout from "@/assets/bg-about.jpg";
+import ParallaxImage from "@/components/ParallaxImage";
 
 const About = () => {
   return (
     <section id="sobre" className="relative">
-      {/* Banner image */}
-      <div className="relative h-64 md:h-80 overflow-hidden">
-        <img
-          src={bgAbout}
-          alt="Prateleiras organizadas do Supermercado Estrela"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/60 to-dark/80 flex items-center justify-center">
+      {/* Parallax banner */}
+      <ParallaxImage
+        src={bgAbout}
+        alt="Prateleiras organizadas do Supermercado Estrela"
+        speed={0.5}
+        className="h-64 md:h-80"
+        overlayClassName="bg-gradient-to-b from-dark/60 to-dark/80"
+      >
+        <div className="h-64 md:h-80 flex items-center justify-center">
           <div className="text-center">
             <span className="text-primary font-semibold text-sm uppercase tracking-widest">Nossa história</span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-foreground mt-3">
@@ -20,7 +22,7 @@ const About = () => {
             <div className="w-16 h-1 bg-primary mx-auto mt-4 rounded-full" />
           </div>
         </div>
-      </div>
+      </ParallaxImage>
 
       {/* Content */}
       <div className="section-padding bg-background">

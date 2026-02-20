@@ -1,17 +1,19 @@
 import { MapPin, Clock, Mail, Phone } from "lucide-react";
 import bgContact from "@/assets/bg-contact.jpg";
+import ParallaxImage from "@/components/ParallaxImage";
 
 const Contact = () => {
   return (
     <section id="contato" className="relative">
-      {/* Banner */}
-      <div className="relative h-64 md:h-72 overflow-hidden">
-        <img
-          src={bgContact}
-          alt="Vista aérea da cidade de Estreito no Maranhão"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/60 to-dark/80 flex items-center justify-center">
+      {/* Parallax banner */}
+      <ParallaxImage
+        src={bgContact}
+        alt="Vista aérea da cidade de Estreito no Maranhão"
+        speed={0.5}
+        className="h-64 md:h-72"
+        overlayClassName="bg-gradient-to-b from-dark/60 to-dark/80"
+      >
+        <div className="h-64 md:h-72 flex items-center justify-center">
           <div className="text-center">
             <span className="text-primary font-semibold text-sm uppercase tracking-widest">
               Fale conosco
@@ -22,7 +24,7 @@ const Contact = () => {
             <div className="w-16 h-1 bg-primary mx-auto mt-4 rounded-full" />
           </div>
         </div>
-      </div>
+      </ParallaxImage>
 
       {/* Content */}
       <div className="section-padding bg-background">

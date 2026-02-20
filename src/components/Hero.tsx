@@ -1,21 +1,16 @@
 import heroImage from "@/assets/hero-supermarket.jpg";
+import ParallaxImage from "@/components/ParallaxImage";
 
 const Hero = () => {
   return (
-    <section
-      id="inicio"
-      className="relative min-h-[85vh] flex items-center pt-20"
+    <ParallaxImage
+      src={heroImage}
+      alt="Interior do Supermercado Estrela com seção de frutas e verduras frescas"
+      speed={0.3}
+      className="min-h-[85vh] flex items-center pt-20"
+      overlayClassName="bg-gradient-to-r from-dark/90 via-dark/70 to-dark/40"
     >
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Interior do Supermercado Estrela com seção de frutas e verduras frescas"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark/90 via-dark/70 to-dark/40" />
-      </div>
-
-      <div className="relative container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-20">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-black text-dark-foreground mb-4 leading-tight">
             Supermercado{" "}
@@ -64,7 +59,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </ParallaxImage>
   );
 };
 
