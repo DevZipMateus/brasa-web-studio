@@ -19,11 +19,20 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close menu on resize to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) setIsOpen(false);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const handleNavClick = (href: string) => {
     setIsOpen(false);
     const el = document.querySelector(href);
     if (el) {
-      const headerHeight = 80;
+      const headerHeight = 72;
       const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scrollTo({ top, behavior: "smooth" });
     }
@@ -35,17 +44,17 @@ const Header = () => {
         scrolled ? "shadow-lg" : ""
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between h-20 px-4">
+      <div className="container mx-auto flex items-center justify-between h-16 sm:h-18 md:h-20 px-4 lg:px-8">
         <a href="#inicio" onClick={() => handleNavClick("#inicio")}>
-          <img src={logo} alt="Supermercado Estrela - Logo" className="h-12 md:h-14" />
+          <img src={logo} alt="Supermercado Estrela - Logo" className="h-10 sm:h-11 md:h-12 lg:h-14" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
           {navLinks.map((link) => (
             <button
               key={link.href}
               onClick={() => handleNavClick(link.href)}
-              className="text-foreground/70 hover:text-primary font-medium transition-colors duration-200 text-sm uppercase tracking-wide"
+              className="text-foreground/70 hover:text-primary font-medium transition-colors duration-200 text-sm uppercase tracking-wide whitespace-nowrap"
             >
               {link.label}
             </button>
@@ -54,7 +63,7 @@ const Header = () => {
             href="https://wa.me/5599999999999"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-colors"
+            className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-colors whitespace-nowrap"
           >
             Fale conosco
           </a>
@@ -62,7 +71,7 @@ const Header = () => {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-foreground p-2"
+          className="lg:hidden text-foreground p-2"
           aria-label="Abrir menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -70,13 +79,13 @@ const Header = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-background border-t border-border">
-          <nav className="flex flex-col py-4 px-4 gap-1">
+        <div className="lg:hidden bg-background border-t border-border max-h-[calc(100vh-4rem)] overflow-y-auto">
+          <nav className="flex flex-col py-3 px-4 gap-1">
             {navLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-foreground/70 hover:text-primary hover:bg-muted px-4 py-3 rounded-lg text-left font-medium transition-colors"
+                className="text-foreground/70 hover:text-primary hover:bg-muted px-4 py-3 rounded-lg text-left font-medium transition-colors text-base"
               >
                 {link.label}
               </button>
