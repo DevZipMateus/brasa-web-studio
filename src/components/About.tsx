@@ -9,7 +9,6 @@ const About = () => {
       <ParallaxImage
         src={bgAbout}
         alt="Prateleiras organizadas do Supermercado Estrela"
-        speed={0.5}
         className="h-64 md:h-80"
         overlayClassName="bg-gradient-to-b from-dark/60 to-dark/80"
       >
