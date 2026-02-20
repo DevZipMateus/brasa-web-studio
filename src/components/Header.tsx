@@ -31,8 +31,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-dark shadow-lg" : "bg-dark/95"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background ${
+        scrolled ? "shadow-lg" : ""
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-20 px-4">
@@ -45,7 +45,7 @@ const Header = () => {
             <button
               key={link.href}
               onClick={() => handleNavClick(link.href)}
-              className="text-dark-foreground/80 hover:text-primary font-medium transition-colors duration-200 text-sm uppercase tracking-wide"
+              className="text-foreground/70 hover:text-primary font-medium transition-colors duration-200 text-sm uppercase tracking-wide"
             >
               {link.label}
             </button>
@@ -62,7 +62,7 @@ const Header = () => {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-dark-foreground p-2"
+          className="md:hidden text-foreground p-2"
           aria-label="Abrir menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -70,13 +70,13 @@ const Header = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-dark border-t border-dark-foreground/10">
+        <div className="md:hidden bg-background border-t border-border">
           <nav className="flex flex-col py-4 px-4 gap-1">
             {navLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-dark-foreground/80 hover:text-primary hover:bg-dark-foreground/5 px-4 py-3 rounded-lg text-left font-medium transition-colors"
+                className="text-foreground/70 hover:text-primary hover:bg-muted px-4 py-3 rounded-lg text-left font-medium transition-colors"
               >
                 {link.label}
               </button>
