@@ -81,7 +81,7 @@ const Contact = () => {
             <ScrollReveal direction="right" delay={200}>
               <div className="rounded-xl sm:rounded-2xl overflow-hidden border border-border h-[280px] sm:h-[350px] md:h-[400px] lg:h-full shadow-lg hover:shadow-xl transition-shadow duration-500">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.5!2d-47.45!3d-6.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzMnMzYuMCJTIDQ3wrAyNycwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.0!2d-47.4489!3d-6.5611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7930e4b6a84cf1d%3A0x4e9a2e1c8a5b3d7f!2sR.%20Central%2C%20180%20-%20Vila%20S%C3%A3o%20Francisco%2C%20Estreito%20-%20MA!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: "280px" }}
