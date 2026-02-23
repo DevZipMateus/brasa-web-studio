@@ -6,7 +6,7 @@ const Hero = () => {
     <ParallaxImage
       src={heroImage}
       alt="Interior do Supermercado Estrela com seção de frutas e verduras frescas"
-      className="min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[85vh] flex items-center pt-16 sm:pt-18 md:pt-20"
+      className="min-h-screen flex items-center pt-16 sm:pt-18 md:pt-20"
       overlayClassName="bg-gradient-to-r from-dark/90 via-dark/75 to-dark/40 md:from-dark/90 md:via-dark/70 md:to-dark/40"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-20">
