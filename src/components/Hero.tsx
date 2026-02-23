@@ -9,7 +9,7 @@ const Hero = () => {
       className="min-h-screen flex items-center pt-16 sm:pt-18 md:pt-20"
       overlayClassName="bg-gradient-to-r from-dark/90 via-dark/75 to-dark/40 md:from-dark/90 md:via-dark/70 md:to-dark/40"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 md:py-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-28 pb-20 sm:pb-24 md:pb-32">
         <div className="max-w-full sm:max-w-xl md:max-w-2xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-black text-dark-foreground mb-3 sm:mb-4 leading-tight animate-[fade-in-up_0.8s_ease-out_0.2s_both]">
             Supermercado{" "}
