@@ -22,7 +22,7 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-[fade-in-up_0.8s_ease-out_0.8s_both]">
             <a
-              href="https://wa.me/5599999999999"
+              href="https://wa.me/5599984408596"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300 text-center shadow-lg hover:shadow-xl"

@@ -60,7 +60,7 @@ const Header = () => {
             </button>
           ))}
           <a
-            href="https://wa.me/5599999999999"
+            href="https://wa.me/5599984408596"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-colors whitespace-nowrap"
@@ -91,7 +91,7 @@ const Header = () => {
               </button>
             ))}
             <a
-              href="https://wa.me/5599999999999"
+              href="https://wa.me/5599984408596"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold text-center mt-2 hover:bg-primary/90 transition-colors"
