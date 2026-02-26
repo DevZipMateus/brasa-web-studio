@@ -32,8 +32,9 @@ const About = () => {
               <div>
                 <p className="text-muted-foreground leading-relaxed text-base sm:text-lg mb-4 sm:mb-6">
                   O Supermercado Estrela surgiu da vontade do empresário Mauryn Ferreira Carvalho, 
-                  que entrou para o mundo dos negócios bem cedo, aos 15 anos de idade. Como filho mais velho, 
-                  Mauryn trancou a faculdade de direito e assumiu o comércio.
+                  que entrou para o mundo dos negócios bem cedo, aos 15 anos de idade. Como filho mais novo, 
+                  Mauryn trancou a faculdade de direito e assumiu os negócios da família no campo com o objetivo 
+                  de ajudar a mãe e suas duas irmãs que na ocasião também estavam na faculdade.
                 </p>
                 <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
                   Em pouco tempo, se tornou o mais jovem empresário local com uma estratégia de alavancagem 
